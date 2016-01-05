@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleLayout">
+        <attr name="Back_Text" format="string" />
+        <attr name="Edit_Text" format="string" />
+        <attr name="Title_Text" format="string" />
+    </declare-styleable>
+</resources>
