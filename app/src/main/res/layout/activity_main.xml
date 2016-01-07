@@ -19,4 +19,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Unit4" />
+    <Button
+        android:onClick="showUnit5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unit5" />
 </LinearLayout>

@@ -2,12 +2,37 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.monkey.firstline">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <receiver android:name=".unit5.receiver.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".unit5.receiver.MyReceiver">
+            <intent-filter android:priority="100">
+                <action android:name="com.monkey.firstline.unit5.receiver.MyReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".unit5.receiver.AnotherReceiver">
+            <intent-filter>
+                <action android:name="com.monkey.firstline.unit5.receiver.MyReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".unit5.receiver.ForceOfflineReceiver">
+            <intent-filter>
+                <action android:name="com.monkey.firstline.unit5.receiver.FORCE_OFFLINE" />
+            </intent-filter>
+        </receiver>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +47,9 @@
         <activity android:name=".unit3.MessageActivity" />
         <activity android:name=".unit4.Unit4Activity" />
         <activity android:name=".unit4.activity.NewsContentActivity" />
-        <activity android:name=".unit4.activity.NewsActivity"></activity>
+        <activity android:name=".unit4.activity.NewsActivity" />
+        <activity android:name=".unit5.Unit5Activity" />
+        <activity android:name=".unit5.LogoutDemoActivity"></activity>
     </application>
 
 </manifest>

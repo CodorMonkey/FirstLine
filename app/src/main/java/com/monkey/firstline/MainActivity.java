@@ -1,15 +1,16 @@
 package com.monkey.firstline;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.monkey.firstline.common.BaseActivity;
 import com.monkey.firstline.unit2.FirstActivity;
 import com.monkey.firstline.unit3.CustomerTitleActivity;
 import com.monkey.firstline.unit4.Unit4Activity;
+import com.monkey.firstline.unit5.Unit5Activity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,5 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void showUnit4(View view) {
         startActivity(new Intent(this, Unit4Activity.class));
+    }
+
+    public void showUnit5(View view) {
+        startActivity(new Intent(this, Unit5Activity.class));
     }
 }
