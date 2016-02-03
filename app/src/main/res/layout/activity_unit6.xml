@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_file_data"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_create_db"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="createDB"
+            android:text="CreateDB" />
+        <Button
+            android:id="@+id/btn_add_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addBook"
+            android:text="AddBook" />
+        <Button
+            android:id="@+id/btn_update_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="updateBook"
+            android:text="UpdateBook" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_query_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="queryBook"
+            android:text="QueryBook" />
+
+        <Button
+            android:id="@+id/btn_replace_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="replaceBook"
+            android:text="ReplaceBook" />
+    </LinearLayout>
+
+</LinearLayout>

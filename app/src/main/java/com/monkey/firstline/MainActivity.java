@@ -9,6 +9,8 @@ import com.monkey.firstline.unit2.FirstActivity;
 import com.monkey.firstline.unit3.CustomerTitleActivity;
 import com.monkey.firstline.unit4.Unit4Activity;
 import com.monkey.firstline.unit5.Unit5Activity;
+import com.monkey.firstline.unit6.Unit6Activity;
+import com.monkey.firstline.unit7.Unit7Activity;
 
 public class MainActivity extends BaseActivity {
 
@@ -36,5 +38,13 @@ public class MainActivity extends BaseActivity {
 
     public void showUnit5(View view) {
         startActivity(new Intent(this, Unit5Activity.class));
+    }
+
+    public void showUnit6(View view) {
+        startActivity(new Intent(this, Unit6Activity.class));
+    }
+
+    public void showUnit7(View view) {
+        startActivity(new Intent(this, Unit7Activity.class));
     }
 }

@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -33,6 +34,11 @@
             </intent-filter>
         </receiver>
 
+        <provider
+            android:name="com.monkey.firstline.unit7.BookProvider"
+            android:authorities="com.monkey.firstline.unit7.provider"
+            android:exported="true" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,7 +55,9 @@
         <activity android:name=".unit4.activity.NewsContentActivity" />
         <activity android:name=".unit4.activity.NewsActivity" />
         <activity android:name=".unit5.Unit5Activity" />
-        <activity android:name=".unit5.LogoutDemoActivity"></activity>
+        <activity android:name=".unit5.LogoutDemoActivity" />
+        <activity android:name=".unit6.Unit6Activity" />
+        <activity android:name=".unit7.Unit7Activity" />
     </application>
 
 </manifest>

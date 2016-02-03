@@ -24,4 +24,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Unit5" />
+    <Button
+        android:onClick="showUnit6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unit6" />
+    <Button
+        android:onClick="showUnit7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unit7" />
 </LinearLayout>
